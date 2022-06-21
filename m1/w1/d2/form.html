@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--action => definisce dove inviare i file inoltre sposta l'utente nella pagina indicata-->
+    <!--method => indica la modalità di invio dei dati-->
+    <!--method post => non sporco l'indirizzo, posso inviare grandi quantità di dati
+        method get => sporco l'indirizzo riempiendolo di sub-query-->
+    
+    <form action="pagina.php" method="post">    <!--rappresenta il file in cui verranno mandati i dati ed il metodo che può essere get o post(il post tiene più pulito l'URL)-->
+
+        <label for="nome">Nome</label>
+        <input name="Nome" type="text" placeholder="Nome">
+        <input name="Num" type="number" placeholder="Numero">
+        <input name="email" type="email" placeholder="Inserisci E-mail">
+        <input name="Pwd" type="password" placeholder="Password">  
+        <br>
+        
+        <label for="consebnso">accetto la privacy policy</label>
+        <input id="consenso" type="checkbox">
+        <br>
+        <select>
+            <option value="">--seleziona--</option> 
+            <option value="roma">Roma</option>
+            <option value="Milano">Milano</option>
+        </select>
+        
+        <button>Invia</button>
+
+        <!--oppure:
+        <input type="submit" value="salva"
+        utilizzo value per cambiare l'etichetta del tasto submit
+    -->
+    
+    </form>
+
+</body>
+</html>
