@@ -24,18 +24,25 @@ header h1 span{
 }
 
 #hrhead {
-    border-color: blue;
-    border-width: 5px;
+    border-color: grey;
+    border-width: 10px;
     margin: 0px;
 }
 
 /* MAIN */
 main h2 {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
     font-size: x-large;
     color: #00a0c6;
+}
+
+main h3 {
+
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
 }
 
 figure{
@@ -54,6 +61,10 @@ figure img {
     font-style: bolder;
 }
 
+b {
+    font-weight: bold;
+}
+
 address {
     text-align: center;
 }
@@ -69,6 +80,30 @@ address {
     text-align: center;
     font-size: 35px;
     font-style: bolder;
+    padding-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: #00a0c6;
+
+}
+
+#frase {
+
+    padding: 10px;
+    
+}
+
+p {
+    padding: 10px;
+}
+
+#formaz {
+    text-align: center;
+    font-size: 35px;
+    font-style: bolder;
+    padding-bottom: 10px;
 }
 
 
@@ -85,10 +120,14 @@ blockquote p {
     margin-left: 25px;
     background-color: rgb(180, 172, 172);
     padding: 30px;
-    border-radius: 20px;
-    padding-bottom: 50px;
+    border-radius: 70px;
+    padding-bottom: 30px;
     font-style: italic;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: 5px 0px 10px;
 }
+
 /* ELEMENTI NEL MAIN */
 
 /* FOOTER */
