@@ -1,0 +1,48 @@
+    /*icolori possono essere scelti per nome:
+    red, yellow, ecc..
+    Devono però essere colori preimpostati nel linguaggio
+
+    posso utilizzare anche i colori esadecimali
+    esempio:
+
+    #ffffff => binaco
+    
+    possoutilizzare anche i colori indicati in rgb
+    rgb(rosso, verde, blue) i valori possono andare da 0 a 255
+    dove 0 è nero, 255 è bianco
+
+    per usare rgb con trasparenza scriveremo rgba()
+
+    rgba(rosso, verde, blue, opacità)
+
+    esempio: rgba(0,0,0,0,5) => nero con 50& di trasparenza
+
+    */
+    div {
+        /*selezione attraverso il tag*/
+        color: rgb(255, 0, 0);
+
+    }
+
+    #div-blue {
+        /*selezione attraverso l'id*/
+        color: blue;
+    }
+
+    .testo-verde {
+        /* selezione attraverso la classe*/
+        color: green;
+    }
+
+    span {
+        font-style: italic;
+    }
+
+    #area-grassetto>span {
+        /*ha cercato tutti gli span dentro ai div in questo caso contrassegnato dall'id #area-grassetto*/
+        font-weight: bold;
+    }
+
+    #area-grassetto div span {
+        background-color: blue;
+    }

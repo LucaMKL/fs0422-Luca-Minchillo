@@ -1,0 +1,17 @@
+blockquote + p{ /*il primo tag p dopo ogni blockquote(adiacente)*/
+    color: red;
+}
+
+span ~ b{
+    color: blue;
+}
+button{
+    background-color: red;
+    transition: background-color 1s;
+}
+
+button:hover{
+    background-color: yellowgreen;
+    border:none;
+    
+}
