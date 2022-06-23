@@ -1,0 +1,59 @@
+/*background sfondo*/
+
+body{
+    background-image: url(https://images3.alphacoders.com/686/686773.jpg);
+    
+
+}
+
+/*gestione immagini*/
+img{
+    max-width: 100%;
+}
+/*box model*/
+.quadrato {    /*per gli id in html si usa "#" nel css mentre per le classi si usa "." */
+
+    background-color: red;
+    height: 200px;
+    width: 200px;  /*con height e width posso modificare a mano lo spazio occupato e possiamo usare px/vh/&/vw*/
+    padding-top: 10px;
+    padding-left: 30px;  /*con il padding  vado a creare una sorta di cornice per il contenuto*/
+    box-sizing: border-box;
+    border-top: 5px solid black;  /*border ci permette di creare vari tipi di bordi dotted/solid/dashed in varie posizioni top/right/left/bottom*/
+    border-right: 15px solid rgba(0, 0, 0, 5);
+    border-top-left-radius: 100%;    /*radius ci permette di andare arrotondare i vari angoli*/
+    border-bottom-right-radius: 50%;
+    /*transform: rotate(45deg);  transform ha varie opzioni per modificare l'oggetto*/
+    /*margin: 200px;  /*margin ci permette di indicare e modificare la posizione dell'oggetto nella pagina e possiamo utilizzarlo con piu valori es. margin: 50px 100px 70px 30px*/
+
+}
+
+.quadrato:nth-of-type(1){   /*cosi vado a selezionare quale classe quadrato selezionare*/
+    width: 50%;
+    margin: 0 25%   /*cosi posso muovere in orizzontale un oggetto*/
+
+}
+
+.quadrato:nth-of-type(2) {
+
+    width: 35%;
+    margin: 0 25%;
+}
+
+.center-text {
+
+    text-align: center;
+
+}
+
+/*sfondi*/
+
+#blocco-sfondo {
+
+    height: 300px;
+    background-image: url('../img/html5-piccola-guida.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed; /*effetto parallasse*/
+}

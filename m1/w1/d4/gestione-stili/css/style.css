@@ -1,0 +1,30 @@
+#blocco-trasparente {
+    padding: 15px;
+    opacity: 0.5;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+/*overflow*/
+
+#sezioni {
+    height: 200px;
+    overflow: auto;
+    padding: 25px;
+}
+
+::-webkit-scrollbar {
+    background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+#sezione2 {
+    margin-top: 20px;
+    word-wrap: break-word; /*interrompe le parole lunghe*/
+    hyphens: auto;
+}

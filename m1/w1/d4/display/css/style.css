@@ -1,0 +1,25 @@
+.container {
+    margin: 0;
+    width: 70%;
+}
+
+
+.colonna {
+    background-color: yellow;
+    width: 25%;                     /*crea ed organizza le colonne*/
+    height: 200px;
+    display: inline-block;
+    margin: 1px;
+    margin-bottom: 1px;
+}
+
+.colonna:last-of-type(4) {
+    opacity: 0;
+}
+.colonna:last-of-type(8) {
+    display: none;
+}
+
+:target {
+    background-color: red;
+}
