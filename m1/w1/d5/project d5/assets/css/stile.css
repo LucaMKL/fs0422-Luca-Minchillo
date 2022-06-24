@@ -1,0 +1,184 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../images/banner.jpg);  /*problema 3 spaziare l'immagine*/
+    font-size: 1.3rem;
+    height: 480px;
+}
+
+header img {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+header div {
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    color: #27a4cb;
+    font-size: 2.5rem;
+    margin-top: 15px;
+    letter-spacing: 4px;
+
+}
+
+header p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+header button {
+
+    background-color: orangered;
+    border: none;
+    width: 125px;
+    height: 50px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+header button a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: orangered;            /*Problema1: riempimento Bottone e collegamento*/
+    color: white;
+    font-weight: bold;                
+}
+
+main section #tit {
+    font-family: 'Montserrat', sans-serif;;
+    padding: 15px;
+    margin: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27a4cb;
+}
+
+main section #txt {
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+    padding: 13px;
+    font-size: 1.5rem;
+}
+
+main #img1 {
+    border-radius: 50%;
+    padding-top: 15px;
+    margin-right: 10px;
+
+}
+
+main #sec1 {
+    background-color: #df2d16;
+    width: auto;
+    height: 350px;
+}
+
+main #sec1 #tit2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+main #sec1 p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 20px;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+main #sec1 div {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+main #sec2 {
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.308);       /*Problema2 adattamento immagini e bordi a lato */
+    margin: 45px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 1px;
+}
+
+main #sec2 #img2 {
+    margin-right: 45px;
+}
+
+footer {
+    background-color: #27a4cb;
+    height: 340px;
+}
+
+footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+footer ul #li1 a{
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer ul #li1 a::before{
+    content: '✆';
+    color: white;
+    padding: 5px;
+}
+footer ul #li2 a{
+    color: white;
+    font-size: 1.3rem;
+}
+footer ul #li2 a::before {
+    content: '🖃';
+    color: white;
+    padding: 5px;
+}
+
+footer ul #li3 {
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+footer hr {
+    width: 180px;
+}
+footer div {
+    font-size: 1.1rem;
+    color: white;
+    padding-top: 15px;
+}
+footer span {
+    text-decoration: underline;
+}
