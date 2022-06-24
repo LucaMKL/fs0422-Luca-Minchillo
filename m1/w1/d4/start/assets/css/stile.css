@@ -3,6 +3,8 @@ body{
     background-image: url(../img/sfondo.png);
     background-position: center;
     font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+
 }
 /* HEADER */
 header{
@@ -28,7 +30,7 @@ header{
 
 header img {
     
-    margin-left: 100px
+    margin-left: 60px;
     
     
 }
@@ -135,9 +137,49 @@ main article #txt2{
 
 main article #ul1 {
 
-    margin-left: 25px;
-    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
     font-size: 1.1rem;
+}
+
+main article ul li:nth-of-type(1) {
+    padding-bottom: 10px;
+    word-wrap: 2px;
+    line-height: 23px;
+
+}
+
+main article ul li:nth-of-type(2){
+    padding-bottom: 10px;
+    word-wrap: 2px;
+    line-height: 23px;
+}
+
+main article ul li:nth-of-type(3){
+    padding-bottom: 10px;
+    word-wrap: 2px;
+    line-height: 23px;
+
+}
+
+main article p strong {
+
+    font-weight: bold;
+    color: #aa2072;
+}
+
+
+main article code {
+
+    background-color: #e8ede2;
+    border: solid 1px grey;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    opacity: 0.5rem;
+        
+
 }
 
 main article #txt3 {
@@ -148,6 +190,14 @@ main article #txt3 {
 
 main article #txt4 {
     margin: 10px;
+    font-size: 1.1rem;
+
+}
+
+main ol {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
     font-size: 1.1rem;
 
 }
@@ -163,31 +213,108 @@ table caption {
 }
 /* TABELLE */
 
+table {
+    border-collapse: collapse;                              
+    width: 100%;
+    border-bottom: solid 2px #3366cc;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #efefef;
+}
+
 table thead tr th:nth-of-type(1){
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 2%;
-    padding-right: 15px;
-    background-color: #3d71c4;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: #3366cc;
     
 
 }
 
 table thead tr th:nth-of-type(2){
+    color: white;
     line-height: 20px;
-    padding-left: 50px;
-    padding-bottom: 15px;
-    background-color: #3d71c4;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #3366cc;
     border-left: solid 1px white;
 
 }
 
 table thead tr th:nth-of-type(3){
-    padding-left: 50px;
-    padding-bottom: 15px;
-    background-color: #3d71c4;
+    color: white;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    background-color: #3366cc;
     border-left: solid 0.2px white;
 }
+
+main article #txt6 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+main article iframe {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+main article section {
+    background-color: #dfe5e6;
+    text-align: center;
+    padding: 20px;
+    margin: 15px
+}
+
+main article section h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+} 
+
+main article section p  {
+    margin: 10px;
+    line-height: 30px;
+    
+}
+
+main article section form fieldset input {
+
+    height: 30px;
+    margin-bottom:10px;
+    
+    
+
+}
+
+main article section form fieldset button { 
+    color: white;
+    background-color: #3366cc;
+    font-size: larger;
+    margin-top: 10px;
+
+}
+/*table tbody tr:nth-child(even){
+    width: 100%;
+    background-color: #efefef;
+
+}*/
+
 
 /* FORM */
 
