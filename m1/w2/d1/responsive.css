@@ -1,0 +1,41 @@
+
+
+@media screen and (min-width: 480px) {     /*and concatena più cose praticamente abbiamo messo che se lo schermo, arrivati aduna certa larghezza qualche cosa cambi*/
+                                        /*il breakpoint è  un punto su una linea ideale che parte da zero in cui si verificano dei cambiamenti o modifiche al layout della pagina tramite CSS*/
+    .col{                               /*dai 480px in su cambia*/
+        background-color: yellow;
+        width: calc(100% / 2 - 8px);
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .solodektop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){       /*dai 768px in su cambia quindi applica ciò che ho scritto sotto*/
+
+    .container{
+        width: 768px;
+    }
+    
+    .col{
+        background-color: green;
+        width: calc(100% / 3 8px);
+    }
+    
+}
+
+@media screen and (min-width:1440px){       /*dai 1440px in su cambia*/
+
+    .container{
+        width: 1170px;
+    }
+    
+    .col{
+        background-color: blue;
+        width: calc(100% / 4 8px);
+    }
+    
+}
