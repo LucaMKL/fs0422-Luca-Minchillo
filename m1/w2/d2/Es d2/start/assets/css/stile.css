@@ -11,43 +11,35 @@ body {
 * {box-sizing: border-box;}
 hr {display: none;} /* rimuove l'elemento */
 
-/* BUTTON FIXED */
-.toTop {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-}
-.social {
-    position: fixed;
-    bottom: 20vh;
-    right: 20px;
-}
-.toTop a, .social a {
-    color: #c77ea2;
-    font-size: 4rem;
-    display: block;
-}
-.social a {
-        color: rgb(45, 101, 185);
-}
-.toTop .far, .social .far {
-    background: transparent;
-}
 
+
+/*body #btt{
+    background-color: purple;
+    color: white;
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none; 
+} */
 /* HEADER */
 header {
     background: rgb(0,160,198);
-    background: linear-gradient(180deg, rgba(0, 158, 198, 0.733) 0%, rgba(3, 110, 134, 0.747) 68%);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
-    padding: 2em 1.5em;
+    padding: 2em 1.2em;
     position: sticky;
     top: 0;
-    z-index: 10;
+    width: 100%;
+    z-index: 2;
 }
 header div img {
     margin-bottom: 20px;
@@ -58,11 +50,16 @@ header nav ul {
 header nav li {
     list-style: none;
     display: inline-block;
-    margin-right: 10px;
 }
-    header nav li:last-child {
-        margin-right: 0;
-    }
+header nav #li1{
+    padding-right: 10px;
+}
+header nav #li2{
+    padding-right: 10px;
+}
+header nav #li3{
+    padding-right: 10px;
+}
 header nav li a {
     color: white;
     text-decoration: none;
@@ -81,11 +78,24 @@ main {
     padding: 2em 1em;
     margin-bottom:1.5em ;
 }
+
+main img{
+    float: left;
+    margin-right: 10px;      /*Continuare*/
+    border: 4px solid #00A0C6;
+    outline: 4px solid #a02571;
+    margin-bottom: 10px;
+
+}
+
+main .txt1 {
+    margin-right: 10px;
+
+}
 section { 
     background-color: #e3e3e3;
-    padding: 2.5em 1em 1em;
+    padding: 1em;
     margin-bottom: 2em;
-    position: relative;
 }
 section h2 {
     text-align: center;
@@ -93,13 +103,13 @@ section h2 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 1em;
-    background-color: #a3a3a3;
-    position: absolute;
-    top: -0.5em;
-    left: 5%;
-    padding: 0 1em;
-    box-shadow: 1px 1px 2px #333;
+    border: 1px solid rgb(179, 175, 175);
+    width: 6em;
+    position: relative;
+    bottom: 27px;
+    left: 15px;
+    background-color: rgb(179, 175, 175);
+    z-index: 1; /* è sequenziale, per cui intal caso il 2 (header) sale sopra all'1 */
 
 }
 
@@ -116,18 +126,6 @@ p, address, ul, ol, dl, blockquote {
 h1 + p {
     color: #a0a0a0;
 }
-.imgLeft {
-    float: left;
-    margin-right: 20px;
-    border: 4px solid #00A0C6;
-    outline: 4px solid #a02571;
-    padding: 3px;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 ul, ol {
     margin-left: 2em;
 }
@@ -214,12 +212,37 @@ aside div p:last-child {
     font-size: 0.8em;
     text-align: right;
 }
+.toTop {
+    font-size: 4rem;
+    position: fixed;
+    bottom: 30px;
+    left: 500px;
+}
+.toTop i {
+    color: rgb(197, 26, 55);
+}
 
 
+.social {
+    font-size: 3rem;
+}
+.social i {
+    color: rgb(5, 56, 133);
+}
+
+.social2 {
+margin-right: 2rem;
+font-size: 3rem;
+}
+
+.social2 i {
+    color: rgb(5, 56, 133);
+
+}
 /* FOOTER */
 footer {
     background: rgb(53,53,53);
-    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5, 85, 103, 0.664) 68%);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
     box-shadow: 0 3px 3px #444;
     color: #f0f0f0;
     padding: 1em;

@@ -1,0 +1,100 @@
+.area-blocchi {
+    margin-top: 300px;
+    
+}
+
+.fascia {
+    background-color: #ccc;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#elemento-relative{
+    position: absolute; 
+    top: -30px;
+    width: 100%;
+}
+
+/*esercizio 2*/
+
+#area-blu {
+    background-color: blue;
+    height: 600px;
+    position: relative;
+}
+
+.blocco {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.blocco:nth-of-type(1){
+    right: 10px;
+    top: 10px;
+}
+.blocco:nth-of-type(2){
+    left: 10px;
+    bottom: 10px;
+}
+.blocco:nth-of-type(3){
+    left: 10px;
+    bottom: 10px;
+}
+.blocco:nth-of-type(4){
+    right: 10px;
+    bottom: 10px
+}
+
+/*z-index*/
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blocco-colorato {
+    width: 200px;
+    height: 202px;
+    border: 1px dashed black;
+    position: absolute;
+}
+
+.blocco-colorato:nth-of-type(1){
+    background-color: red;
+    z-index: 1;
+}
+.blocco-colorato:nth-of-type(2){
+    z-index: 2;
+    left: 100px;
+    top: 100px;
+    background-color: yellow;
+}
+.blocco-colorato:nth-of-type(3){
+    z-index: 3;
+    left: 200px;
+    top: 200px;
+    background-color: blue;
+}
+.blocco-colorato:nth-of-type(4){
+    z-index: 4;
+    left: 300px;
+    top: 300px;
+    background-color: green;
+}
+.blocco-colorato:nth-of-type(5){
+    z-index: 5;
+    left: 400px;
+    top: 400px;
+    background-color: purple;
+}
+.blocco-colorato:nth-of-type(6){
+    z-index: 6;
+    left: 500px;
+    top: 500px;
+    background-color: gray;
+}
