@@ -50,15 +50,16 @@ header nav ul {
 header nav li {
     list-style: none;
     display: inline-block;
+
 }
 header nav #li1{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 header nav #li2{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 header nav #li3{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 header nav li a {
     color: white;
@@ -217,7 +218,7 @@ aside div p:last-child {
     font-size: 4rem;
     position: fixed;
     bottom: 30px;
-    left: 500px;
+    right: 25px;
 }
 .toTop i {
     color: rgb(197, 26, 55);
