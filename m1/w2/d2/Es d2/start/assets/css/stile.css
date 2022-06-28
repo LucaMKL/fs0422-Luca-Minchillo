@@ -152,6 +152,7 @@ iframe {
 /* TABELLE */
 table {
     margin-bottom: 2em;
+    width: 100%;
 }
 caption {
     font-weight: bold;
@@ -225,6 +226,9 @@ aside div p:last-child {
 
 .social {
     font-size: 3rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 5px;
 }
 .social i {
     color: rgb(5, 56, 133);
@@ -233,6 +237,8 @@ aside div p:last-child {
 .social2 {
 margin-right: 2rem;
 font-size: 3rem;
+position: relative;
+top: 5px;
 }
 
 .social2 i {
