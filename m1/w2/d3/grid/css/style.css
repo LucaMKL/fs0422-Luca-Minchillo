@@ -1,0 +1,71 @@
+h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-top: 1px solid black;
+}
+.container {
+    display: grid;
+    margin-bottom: 2rem;
+}
+.blocco{
+    background-color: #ccc;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+
+}
+
+#n1 .blocco {
+    height: 100px;
+}
+#n1 .blocco:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#n1 .blocco:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+#n1 .blocco:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#n2{
+    height: 50vh;
+}
+#n1 .blocco:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#n1 .blocco:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#n1 .blocco:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#n3 {
+    grid-template-areas: 
+    "header"
+    "main aside"
+    "main aside"
+    "footer";
+    height: 50vh;
+}
+#n3 .blocco:nth-child(1){
+    grid-area: header;
+}
+#n3 .blocco:nth-child(2){
+    grid-area: main;
+}
+#n3 .blocco:nth-child(3){
+    grid-area: aside;
+}
+#n3 .blocco:nth-child(4){
+    grid-area: footer;
+}
