@@ -1,0 +1,28 @@
+main {
+    display: grid;
+
+}
+
+main article {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:5;
+}
+
+main section {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 3rem;
+    position: sticky;
+    top: 250px;
+}
+
+main aside {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
