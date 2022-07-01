@@ -1,0 +1,331 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+#en1 {
+    height: 75px;
+}
+
+p{
+    font-size: 1.3;
+}
+
+/*Non sono riuscito a fare il linear gradient*/
+
+
+/* HEADER */
+header img {
+    position: absolute;
+    top: 17px;
+    left: 10%;
+    max-width: 100%;
+    
+}
+#en1 a {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 40%;
+    top: 30px;
+    left: 55%;
+    max-width: 100%;
+    
+    
+}
+
+#en1 a:hover {
+    background-color: rgba(117, 117, 117, 0.363);
+    transition-duration: 1s;
+    transform: scale(2);
+    
+}
+
+#contatti {
+    color: black;
+}
+
+header h1 {
+    color: white;
+    padding: 30px 35px;
+    
+}
+#en2 {
+    height: 450px;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    
+}
+header p {
+    padding-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 80px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+#button1 {
+    border: 1px solid black;
+    background-image: -moz-linear-gradient(#444 #6767);
+    padding-bottom: 10px;
+    background-color: #0c0633;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    position: relative;
+    top: 25px;
+    left: 40px;
+    
+}
+/* MAIN */
+
+#sezione {
+    text-align: center;
+}
+
+#tit2 {
+    margin-top: 20px;
+}
+#parte0 p{
+    font-size: 1.3rem;
+    margin: 30px 20px;
+    
+    text-align: center;
+}
+
+#parte1 p{
+    font-size: 1.3rem;
+    margin: 30px 30px;
+    
+    text-align: center;
+}
+#parte2 p{
+    font-size: 1.3rem;
+    margin: 30px 50px;
+    
+    text-align: center;
+}
+#parte3 p{
+    font-size: 1.3rem;
+    margin: 30px 50px;
+    text-align: center;
+}
+
+.secsfondo {
+    background-color: #0c0633;
+    text-align: center;
+    color: white;
+    height: 500px;
+    width: 100%;
+}
+i {
+    font-size: 2rem;
+    margin-top: 50px;
+    color: rgb(214, 62, 62);
+}
+.secsfondo h1 {
+    padding: 10px 10px;
+    margin: 20px 20px;
+    padding-top: 50px;
+}
+
+.secsfondo p {
+    flex: auto;
+    padding: 40px 30px;
+    margin: 20px 20px;
+}
+
+.secsfondo button {
+        height: 50px;
+        margin-bottom: 50px;
+        background-image: linear-gradient(#6cc1e2 #392f7a);
+}
+
+.secsfondo a {
+    text-decoration:none;
+    font-size: 1.3rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(#6cc1e2 #392f7a);
+}
+
+#sect2 {
+    text-align: center;
+}
+
+#sect2 img {
+    margin-top: 50px;
+}
+
+#sect2 p {
+    font-size: 1.3rem;
+    margin: 30px 20px;
+    
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin:20px 
+}
+/* FOOTER */
+
+footer {
+    background: rgb(238, 238,238);
+    color: black;
+    height: 800px;
+    width: 100%;
+       
+}
+
+footer h2 {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+footer p{
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-left: 30px;
+    font-size: 1.3rem;
+
+}
+footer i {
+    font-size: 3rem;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+#field {
+   display:grid;
+   height: 100px;
+   width: 100%px;
+   margin: 50px 50px;
+   position: relative;
+}
+
+fieldset button {
+    background-image: linear-gradient(#6cc1e2 #392f7a);
+    background-color: #392f7a;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*CONTATTI*/
+
+
+#titlepg2 {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.field2{
+    text-align: center;
+}
+
+#dati-user {
+    height: 30px;
+    width: 100%;
+    max-width: 350px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+#user-email {
+    height: 30px;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+#messaggio {
+    height: 70px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+section #pulsante {
+       
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#bottone{
+    background-image: linear-gradient(#6cc1e2 #392f7a);
+    background-color: #392f7a;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+
+}
+
+#torna123 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#tornahome{
+    border-radius: 25%;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #392f7a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+    
+#torna123:hover{
+    background-color: rgba(117, 117, 117, 0.363);
+    transition-duration: 1s;
+    transform: scale(2);
+}
+
+.title3 {
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    
+}
+.contattitxt {
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+/* RESPONSIVE */
+

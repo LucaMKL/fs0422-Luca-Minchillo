@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Epicode School: contattaci per i corsi di front end developer ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <title>Epicode - Contatti</title>
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/stile.css">
+</head>
+
+<body>
+  <section>
+
+    <h1 id="titlepg2">Contatti</h1>
+    <form method="POST" action="elabora_form.php" id="formina">
+      <fieldset class="field2">
+        <input type="text" name="user_name" id="dati-user" placeholder="Inserisci inserisci nome e cognome" required="">
+      </fieldset>
+      <form method="POST" action="elabora_form.php">
+        <fieldset class="field2">
+          <input type="email" name="user_email" id="user-email" placeholder="Indirizzo valido: example@" required="">
+
+        </fieldset>
+        <form method="POST" action="elabora_form.php">
+          <fieldset class="field2">
+            <input type="text" name="messaggio" id="messaggio" placeholder="Scrivi in breve il tuo messaggio"
+              required="">
+          </fieldset>
+          <div id="pulsante">
+            <button type="reset" id="bottone"> Invia il messaggio</button>
+          </div>
+          <div id="torna123">
+            <a href="./index.html" id="tornahome">Torna alla Home</a>
+          </div>
+          <h2 class="title3">Sede informativa</h2>
+        <p class="contattitxt">
+          Via Appia 1 <br><br> Roma (RM) 00100 <br><br>
+          <br><br> Info@epicode.school <br><br> (+39)0612345678
+        </p><h2 class="title3">Lavora con noi</h2>
+        <p class="contattitxt">
+          Per poterti candidare ad un ruolo di <br><br> docente invia il tu CV a job@epicode.school
+        </p>
+
+  </section>
+
+</html>
