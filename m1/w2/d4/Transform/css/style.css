@@ -1,0 +1,38 @@
+#transform-area{
+    perspective: 400px;
+    background-color: black;
+    height: 100vh;
+}
+
+.quadrato {
+    margin-left: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: #fff;
+    font-size: 3rem;
+}
+
+#n1 {
+    transform: rotateX(30deg);  /*RotateZ()*/  /*la funzione messa cosi fa ruotare l'oggetto sull'asse z a meno che dopo rotate si aggiunga X o Y*/
+}
+#n2 {
+    transform: rotateX(100deg); /*RotateX()*/
+}
+#n3 {
+    transform: rotateY(45deg);  /*RotateY()*/
+}
+#n4 {
+    transform: scale(0.5) rotate(30deg); /*puoi aumentare o diminuire la grandezza*/
+}
+#n5 {
+    transform: skew(10deg); /*si possono applicare a skew Y e X è tipo un pitch*/
+}
+#n6 {
+    transition: transform 0.5s, background-color 2s; 
+    transition-delay: 0.3s, 0s;
+}
+#n6:hover {
+    transform: skew(10deg) scale(1.5) rotate(30deg);
+    background-color: yellow;
+}

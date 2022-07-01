@@ -69,3 +69,8 @@ h3 {
 #n3 .blocco:nth-child(4){
     grid-area: footer;
 }
+
+#n4 {
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+}

@@ -1,0 +1,105 @@
+#canvas {
+    height: 45vh;
+    position: relative;
+    top: 250px;
+    display: grid;
+    background-color: #666666;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.yellow {
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #4f4f4f;
+    background-image: linear-gradient(#f3f4c0, #bdbda3 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(-7deg);
+    animation-delay: 0.5s;
+    box-shadow:5px 5px 5px #4f4f4f;
+}
+
+#en1 {
+    margin-top: 2px;
+}
+
+#en2 {
+    margin-top: 35px;
+}
+#en4 {
+    margin-top: 20px;
+}
+#en5 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#en7 {
+    margin-bottom: 30px;
+}
+
+.yellow:hover {
+
+    transform: rotate(0deg);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.green {
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #4f4f4f;
+    background-image: linear-gradient(#bbdebc, #9eb5a1 );
+    display: flex;
+    box-shadow:5px 5px 5px #4f4f4f;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(5deg)
+}
+
+.green:hover {
+    animation-name: anim1;
+    transform: rotate(0deg);
+    transition: 0.5s;
+    transform: scale(1.2);
+    
+}
+
+.blue {
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #4f4f4f;
+    background-image: linear-gradient(#b6b5d4, #9090a2 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(-6deg);
+    box-shadow:5px 5px 5px #4f4f4f;
+}
+.blue:hover {
+    animation-name: anim1;
+    transform: rotate(0deg);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
