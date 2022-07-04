@@ -10,8 +10,8 @@ var $pet = 'giraffa';
 console.log($pet);
 var _pet = 'leone';
 console.log(_pet);
-var _pet2 = 'Documento formale Alfa-Giulietta Quadrifoglio';
-document.write(_pet2);
+//var _pet2 = 'Documento formale Alfa-Giulietta Quadrifoglio';
+//document.write(_pet2);
 
 var x = 5;
 var y = 10;
