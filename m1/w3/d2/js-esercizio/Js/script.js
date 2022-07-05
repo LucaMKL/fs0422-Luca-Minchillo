@@ -5,10 +5,14 @@ var caratteristiche = 'Frontista';
 console.log(caratteristiche);
 const detto = 'Il Surname';
 console.log(detto);
+let anno = 1959;
+const annoAttuale = 2022;
+let età = annoAttuale - anno;
 
 console.log(nome2);
 caratteristiche = 'Amico di Aldo Baglio';
 console.log(caratteristiche);
+console.log(età);
 
 let Aldo = "Perché sei il migliore ";
 let Giovanni = "Allora ripeti sei venuto da me per..";
