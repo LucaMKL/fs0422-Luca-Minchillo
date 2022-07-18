@@ -1,0 +1,20 @@
+#slider{
+
+}
+#slider .wrapper{
+    height: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#slider .control-wrapper{
+    position: relative;
+}
+#slider .slider-control{
+    background-color: tomato;
+    border: none;
+    padding: 20px;
+    position: absolute;
+}
+#slider .control-right{
+    right: 0;
+}
