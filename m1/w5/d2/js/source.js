@@ -1,40 +1,59 @@
 //creare una funzione che dato un certo budget di partenza possa essere scalato progressivamente.
 
-const BUDGET = 10000
-let rand = (max=0) => Math.floor(Math.random()*max) + 1     //con funz freccia
+let rand = (max = 0) => Math.floor(Math.random() * max) + 1     //con funz freccia
 
-function scale() {
-    let spese = 0
+/*
+funzione lunga
+function rand(max){           
+    max = max || 0  //coalescenza
+    return Math.floor(Math.random()*max) + 1
+}
+*/
 
-    while (spese <= BUDGET) {
-        spese += rand(BUDGET - spese);
+let interface = document.querySelector("#interface")
+let testo = document.createElement("input") //facendo cosi ottengo <input>
+testo.setAttribute("type", "number")//metti l'attributo type di tipo numero <input type = 'number'>
+testo.setAttribute("placeholder", "inserire budget")
+testo.setAttribute("value", 0)
+interface.append(testo)//questo mi permette di visualizzarlo all'interno del documento
 
-        if (spese >= BUDGET / 2 && BUDGET - spese > BUDGET / 100 * 5) {
-            console.log(BUDGET - spese)
-            console.log('hai raggiunto metà del tuo budget');
+let button = document.createElement("button") // <button></button>
+button.innerHTML = "salva budget"
+interface.append(button)
 
-        } else if (BUDGET - spese <= BUDGET / 100 * 5) {
-            console.log(BUDGET - spese)
-            return console.log('hai quasi esaurito il tuo budget');
+button.addEventListener("click", budgetSet) //aggiungiamo l'evento click al bottone
 
-        }
-    }
+function budgetSet() {
+  const BUDGET = parseInt(testo.value); //prendo la stringa value dall'input, la rendo un intero tramite parseInt (se avessi voluto un numero con la virgola dovevo mettere parseFloat) e lo assegno al BUDGET
+
+  scale(BUDGET)
 }
 
-scale()
 
 
+function scale(BUDGET) {
+  let spese = 0
 
-/*function rand(max){
-    max = max || 0  //coalescenza
-    return Math.floor(Math.random()*max)
-}*/
+  while (spese <= BUDGET) {
+    spese += rand(BUDGET - spese);
+
+    if (spese >= BUDGET / 2 && BUDGET - spese > BUDGET / 100 * 5) {
+      console.log(BUDGET - spese)
+      console.log('hai raggiunto metà del tuo budget');
+    }
+
+    if (BUDGET - spese <= BUDGET / 100 * 5) {
+      console.log(BUDGET - spese)
+      return console.log('hai quasi esaurito il tuo budget');
+    }
+  }
+}
 
 /*
 1 = true
 0 = false
 
-!
+! not
 x > r
 1 = 0
 0 = 1

@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let pizza = {
+            gusto: 'margherita',
+            tipo: 'napoletana',
+            prezzo: 5,
+            mostraPrezzo: function () {
+                console.log(`il prezzo della pizza ${this.gusto} di tipo ${this.tipo} è di ${this.prezzo} €`);
+            },
+            mostraThis: function () { console.log(this) }
+        }
+
+        function Pizza() {
+            this.gusto = 'Marherita';
+            this.tipo = 'Napoletana';
+            this.prezzo = 5;
+            this.mostraPrezzo = function () {
+                console.log(`il prezzo della pizza ${this.gusto} di tipo ${this.tipo} è di ${this.prezzo} €`)
+            }
+            this.mostraThis = function () { console.log(this) }
+        }
+
+        let margherita = new Pizza();
+        let diavola = new Pizza();
+        diavola.gusto = 'Diavola';
+        diavola.prezzo = 1;
+
+        console.log(margherita, diavola)
+        diavola.mostraThis();
+
+        diavola.mostraPrezzo();
+        margherita.mostraPrezzo();
+
+        //costruttore dell'oggetto con parametri
+        function PizzaPRO(_gusto,_tipo,_prezzo){
+            this.gusto = _gusto;
+            this.tipo = _tipo;
+            this.prezzo = _prezzo;
+            this.mostraPrezzo = function (){
+                console.log(`il prezzo della pizza ${this.gusto} di tipo ${this.tipo} è di ${this.prezzo} €`)                
+            }
+            this.mostraThis = function(){ console.log(this) }
+        }
+
+        let margheritaPro = new PizzaPRO('margherita', 'napoletana', 5);
+        let diavolaPRO = new PizzaPRO('diavola', 'napoletana', 1);
+        let capricciosa = new PizzaPRO('capricciosa', 'romana', 7);
+        console.log(margheritaPro);
+
+        margheritaPro.mostraPrezzo();
+        diavolaPRO.mostraPrezzo();
+        capricciosa.mostraPrezzo();
+
+        PizzaPRO.prototype.disponibilità = true
+
+        console.log(margheritaPro, diavolaPRO, capricciosa);
+        console.log(capricciosa,disponibilità);
+
+
+
+    </script>
+
+</body>
+
+</html>
