@@ -31,12 +31,10 @@ function shuffle(a) {
     return a;
 }
 // una funzione che rimuove la classe active e chiama la funzione startGame()
-
 function playAgain() {
     modal.classList.remove("active");
     startGame();
 }
-
 // la funzione startGame che pulisce il timer, dichiara un array vuoto, mescola casualmente l'array degli animali
 function startGame() {
     clearInterval(interval);
@@ -62,17 +60,11 @@ function startGame() {
     }
     // chiama la funzione timer e associa a tutti gli elementi (div) di classe icon l'evento click e le due funzioni definiti sotto
     startTimer();
-
 }
-
-
-
 function displayIcon() {
-    var icon = document.getElementsByClassName("icon");
+    var icon = document.querySelectorAll("icon");
     var icons = [...icon];
 }
-
-
 /*
 var icon = document.getElementsByClassName("icon");
 var icons = [...icon];
@@ -84,14 +76,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spre
 https://www.tutorialspoint.com/es6/es6_operators.htm (cerca spread nella pagina)
 */
 function displayIcon() {
-
     var icon = document.getElementsByClassName("icon");
     var icons = [...icon];
     //mette/toglie la classe show
     this.classList.toggle("show");
     //aggiunge l'oggetto su cui ha cliccato all'array del confronto
     arrayComparison.push(this);
-
     var len = arrayComparison.length;
     //se nel confronto ci sono due elementi
     if (len === 2) {
@@ -121,7 +111,7 @@ function displayIcon() {
         }
     }
 }
-
+//una funzione che viene mostrata alla fine quando sono tutte le risposte esatte
 function openModal() {
     if (iconsFind.length == arrayAnimali.length) {
         clearInterval(interval);
@@ -130,6 +120,7 @@ function openModal() {
         closeModal();
     }
 }
+// una funzione che nasconde la modale alla fine e riavvia il gioco
 
 function closeModal() {
     closeicon.addEventListener("click", function (e) {
@@ -137,7 +128,7 @@ function closeModal() {
         startGame();
     });
 }
-
+// una funzione che calcola il tempo e aggiorna il contenitore sotto
 
 function startTimer() {
 
@@ -156,9 +147,3 @@ function startTimer() {
         }
     }, 1000);
 }
-
-//una funzione che viene mostrata alla fine quando sono tutte le risposte esatte
-
-// una funzione che nasconde la modale alla fine e riavvia il gioco
-
-// una funzione che calcola il tempo e aggiorna il contenitore sotto
