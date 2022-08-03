@@ -30,21 +30,39 @@
                             return a.anno - b.anno;
                         });
 
+                        this.printTable(document.querySelector('#target'))
+
                     })
             }
 
             printTable(target) {
+
                 let table = document.createElement('table')
+
+                table.append(this.newRow('th','Titolo','Genere','Anno'))
+
+                for(let film of this.filmList){
+                    console.log(film)
+                }
+
+                target.append(table);
 
             }
 
             newRow(tag, ...elem) {
                 let tr = document.createElement("tr");
 
-                let tc = document.createElement(tag);
-                
-                tc.innerHTML = content;
+                for(let content of elem){
+                    
+                    let tc = document.createElement(tag);
+                    
+                    tc.innerHTML = content;
 
+                    tr.append(tc);
+
+                }
+
+                return tr;
 
             }
 
@@ -86,7 +104,7 @@
 
 
         let x = new Films('film.json');
-        console.log(x);
+
 
 
     </script>
