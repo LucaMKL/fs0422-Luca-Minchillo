@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let pizza = {
+            gusto: 'Margherita',
+            prezzo : 5
+        }
+
+        let pizzaCopy = Object.assign({},pizza)//creo un nuovo oggetto identico
+
+        console.log(pizza, pizzaCopy);
+
+
+        //esercizio
+
+        let veicolo = {
+            getColor: function(){
+                console.log('Modello ' + this.colore)
+            }
+        }
+
+        var skate = Object.create(veicolo,{
+            tipo : {
+                value : 'skateboard'
+            },
+            colore : {
+                value: 'misto',
+                writable: true
+            }
+        })
+
+        skate.colore = 'red';
+        console.log(skate.colore)
+        skate.getColor()
+
+
+
+    </script>
+</body>
+</html>

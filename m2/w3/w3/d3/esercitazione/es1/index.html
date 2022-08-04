@@ -13,13 +13,8 @@
 
     <script>
 
-        //const userApi = 'film.json'
-
-
         class Films {
             constructor(dataJson) {
-
-                //this.filmList = [];
 
                 fetch(dataJson)
                     .then(res => res.json())
@@ -39,10 +34,12 @@
 
                 let table = document.createElement('table')
 
-                table.append(this.newRow('th','Titolo','Genere','Anno'))
+                table.append(this.newRow('th', 'Titolo', 'Genere', 'Anno'))
 
-                for(let film of this.filmList){
-                    console.log(film)
+                for (let film of this.filmList) {
+
+                    table.append(this.newRow('td', film.titolo, film.genere, film.anno))
+
                 }
 
                 target.append(table);
@@ -50,12 +47,13 @@
             }
 
             newRow(tag, ...elem) {
+
                 let tr = document.createElement("tr");
 
-                for(let content of elem){
-                    
+                for (let content of elem) {
+
                     let tc = document.createElement(tag);
-                    
+
                     tc.innerHTML = content;
 
                     tr.append(tc);
@@ -66,45 +64,9 @@
 
             }
 
-            /*saveList(list){
-                for(let film of list){
-                    console.log(film)
-                    this.insertionSort(film)
-                }                
-            }            
-            insertionSort(element){
-                if(this.filmList.length == 0){
-                    filmList.push(element)
-
-                }else{
-                }
-            }*/
-
         }
 
-        /*
- <table>
-     <tr>
-         <th>Company</th>
-        <th>Contact</th>
-         <th>Country</th>
-     </tr>
-  <tr>
-         <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-         <td>Germany</td>
-  </tr>
-  <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-  </tr>
-</table>
-*/
-
-
         let x = new Films('film.json');
-
 
 
     </script>

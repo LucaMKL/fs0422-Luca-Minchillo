@@ -1,0 +1,32 @@
+header ul {
+  display: flex; }
+  header ul a {
+    color: #000; }
+  header ul li {
+    padding: 10px;
+    background-color: blue; }
+    header ul li:hover {
+      background-color: blue; }
+
+h1 {
+  background-color: red; }
+
+p {
+  background-color: red; }
+
+/*mixin*/
+.blocco {
+  background-color: green;
+  width: 100px;
+  height: 100px; }
+
+.quadrato {
+  background-color: blue;
+  width: 200px;
+  height: 200px; }
+  .quadrato:hover {
+    background-color: #9999ff; }
+
+p {
+  font-size: 2rem;
+  font-family: "Arial"; }
