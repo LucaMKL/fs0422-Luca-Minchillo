@@ -137,7 +137,7 @@ class ThirdUser implements Smartphone {
     }
 }
 
-var myPhone = new newChiamata(15, 0.15)
+var myPhone = new newChiamata(15, 0.20)
 
 myPhone.ricarica(20)
 console.log(myPhone.credito)
