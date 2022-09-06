@@ -29,7 +29,7 @@ class newChiamata {
         this.credito += accredito
     }
 
-    numero404(credito:number) {
+    numero404():number {
         return this.carica
     }
 
@@ -62,7 +62,7 @@ class FirstUser implements Smartphone {
         this.credito += accredito
     }
 
-    numero404(credito:number) {
+    numero404():number {
         return this.carica
     }
 
@@ -94,7 +94,7 @@ class SecondUser implements Smartphone {
         this.credito += accredito
     }
 
-    public numero404(credito:number) {
+    public numero404():number {
         return this.carica
     }
 
@@ -128,7 +128,7 @@ class ThirdUser implements Smartphone {
         this.credito += accredito
     }
 
-    public numero404(credito:number) {
+    public numero404():number {
         return this.carica
     }
 
@@ -140,7 +140,7 @@ class ThirdUser implements Smartphone {
 var myPhone = new newChiamata(15, 0.20)
 
 myPhone.ricarica(20)
-console.log(myPhone.credito)
+console.log(myPhone.credito)  //scritta per fare i copia ed incolla ma non cancellata
 
 myPhone.chiamata(320)
 console.log(myPhone.credito)
