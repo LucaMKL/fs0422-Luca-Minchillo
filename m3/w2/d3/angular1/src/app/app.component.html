@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <form>
+        <input type="text" placeholder="Nome"[(ngModel)]="newUser.name" class="form-control">
+        <input type="text" placeholder="Nome"[(ngModel)]="newUser.lastname" class="form-control">
+        <button class="btn btn-pimary">Invia</button>
+      </form>
+    </div>
+    <div class="col-6">
+      <table class="table">
+        <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Cognmome</th>
+        </tr>
+        <tr *ngFor="let user of allUsers; let i = index">
+          <td>{{i}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.lastname}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
