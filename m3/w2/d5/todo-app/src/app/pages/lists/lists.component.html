@@ -1,0 +1,11 @@
+<div *ngIf="!isLoaded">Sto caricando</div>
+<div *ngIf="isLoaded">
+  <div *ngFor="let list of lists">
+    <h2>{{list.title}}</h2>
+    <h2>{{list.author}}</h2>
+    <p>{{list.content}}</p>
+    <button (click)="completed(list)">✔️</button>
+    <button (click)="delete(list)">❌</button>
+
+  </div>
+</div>
