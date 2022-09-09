@@ -15,27 +15,7 @@ export class ListsService {
   API: string = 'http://localhost:3000/todos'
 
   listArray:List[] = [
-    {
-      title: "Parrucchiere",
-      content: "In via Alcide de Gasperi 4 scaltenigo (VE)",
-      author: "Sergio",
-      done: false,
-      id: 1
-    },
-    {
-      title: "Prendere il pane",
-      content: "Ore 15.30 del 05/06",
-      author: "Alice",
-      done: false,
-      id: 2
-    },
-    {
-      title: "Raduno del 13/11/2022",
-      content: "Jesolo, piazza Kennedy",
-      author: "Matteo",
-      done: false,
-      id: 3
-    }
+
   ]
 
   getAllLists():Promise<List[]>{
@@ -82,7 +62,7 @@ export class ListsService {
 
 
   setCompleted(list: List): List[] {
-    list.done = !list.done
+    list.completed = !list.completed
 
     let options = {
       method: 'PUT',

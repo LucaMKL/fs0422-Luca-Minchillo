@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     title: '',
     content: '',
     author: '',
-    done: false,
+    completed: false,
     id: undefined,
   }
 
