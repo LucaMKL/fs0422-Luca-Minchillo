@@ -33,7 +33,7 @@ export class ListsService {
       title: "Raduno del 13/11/2022",
       content: "Jesolo, piazza Kennedy",
       author: "Matteo",
-      done: true,
+      done: false,
       id: 3
     }
   ]
