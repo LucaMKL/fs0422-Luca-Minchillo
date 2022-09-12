@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   API: string = 'http://localhost:3000/todos'
 
   notCompleted:List[] = []
+  isLoaded:boolean = false;
 
   newList : List = {
     title: '',
@@ -24,10 +25,16 @@ export class HomeComponent implements OnInit {
   constructor(private listSvc:ListsService) { }
 
   ngOnInit(): void {
+    this.listSvc.getAllLists()
+    .then(res => {
+      this.notCompleted = res.filter((p:List) => p.completed == false)
+      this.isLoaded = true
+    })
   }
 
   add(){
-    this.listSvc.addTodo(this.newList).then( res => this.notCompleted.push(res))
+    this.listSvc.addTodo(this.newList)
+    .then( res => this.notCompleted.push(res))
     this.newList.title = ""
   }
 

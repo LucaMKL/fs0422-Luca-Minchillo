@@ -14,13 +14,8 @@ export class ListsService {
 
   API: string = 'http://localhost:3000/todos'
 
-  listArray:List[] = [
-
-  ]
-
   getAllLists():Promise<List[]>{
-   /* return fetch(this.API).then(res => res.json())
-  }*/
+
   return new Promise<List[]>((resolve, reject) => {
     setTimeout(() => {
       let call = fetch(this.API).then(res => res.json())
@@ -37,7 +32,6 @@ export class ListsService {
       headers: { "content-type": "application/json" }
     }
     let listCopy = Object.assign({}, list);
-    this.listArray.push(listCopy);
 
     return fetch(this.API, options)
       .then(res => res.json())
@@ -46,22 +40,24 @@ export class ListsService {
   }
 
 
-  deleteTodo(list: List):List[]{
+  deleteTodo(list: List, listArr: List[]):List[]{
 
     let options = {
       method: 'DELETE',
       headers: { "content-type": "application/json" }
     }
 
+
     fetch(this.API + '/' + list.id, options)
 
-    let index = this.listArray.findIndex(l => l.id === list.id);
-    this.listArray.splice(index,1)
-    return this.listArray
+    let index = listArr.findIndex(l => l.id === list.id);
+    listArr.splice(index,1)
+
+    return listArr
   }
 
 
-  setCompleted(list: List): List[] {
+  setCompleted(list: List, listArr:List[]): List[] {
     list.completed = !list.completed
 
     let options = {
@@ -72,10 +68,10 @@ export class ListsService {
 
     fetch(this.API + '/' + list.id, options)
 
-    return this.listArray
+    let index = listArr.findIndex(l => l.id === list.id);
+    listArr.splice(index,1)
+
+    return listArr
   }
 
-  /*getCompletedList():List{
-    return this.listArray.filter(p => p.done === isDone)
-  }*/
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { List } from 'src/app/list';
 import { ListsService } from 'src/app/lists.service';
 
@@ -9,26 +9,29 @@ import { ListsService } from 'src/app/lists.service';
 })
 export class ListsComponent implements OnInit {
 
-  lists : List[] = [];
-
-
-  isLoaded:boolean = false
+  @Input() lists : List[] = [];
+  @Input() isCompleted: boolean = true
+  @Input() isLoaded:boolean = false
 
   constructor(private ListSvc:ListsService) { }
 
   ngOnInit(): void {
+    if(this.isCompleted){
     this.ListSvc.getAllLists()
     .then(res => {
-      this.lists = res
+      this.lists = res.filter((p:List) => p.completed == true)
       this.isLoaded = true
     })
   }
-  delete(list:List):void{
-    this.lists = this.ListSvc.deleteTodo(list)
   }
+  deleteTodo(list:List):void{
+    this.lists = this.ListSvc.deleteTodo(list, this.lists)
+  }
+
   completed(list:List):void{
-    this.lists = this.ListSvc.setCompleted(list)
+    this.lists = this.ListSvc.setCompleted(list, this.lists)
   }
+
   add(list:List):void{
     this.ListSvc.addTodo(list).then(list => this.lists.push(list))
   }
