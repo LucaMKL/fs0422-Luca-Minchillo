@@ -1,18 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "Laborum quas officia dolorem l",
-      "content": "",
-      "author": "",
-      "completed": true,
-      "id": 5
-    },
-    {
-      "title": "Cupidatat elit ullam voluptat",
-      "content": "",
-      "author": "",
-      "completed": false,
-      "id": 6
-    }
-  ]
+  "todos": []
 }
