@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <form [formGroup]="form" class="col" (ngSubmit)="submit()">
+      <h1>Reactive from hero</h1>
+
+      <label for="name">Nome</label>
+      <input type="text" formControlName="name" id="name" class="form-control" placeholder="Nome">
+      <p *ngIf="isValid('name')" class="alert alert-danger mt-2">Campo obbligatorio</p>
+
+      <label for="alterEgo">Alter Ego</label>
+      <input type="text" formControlName="alterEgo" id="alter-ego" class="form-control" placeholder="Alter Ego">
+      <p *ngIf="isValid('alterEgo')" class="alert alert-danger mt-2">Campo obbligatorio</p>
+
+      <div formArrayName="superPower">
+        <button (click)="addElement('superPower')" class="btn btn-success my-2">Aggiungi potere</button>
+        <input type="text"
+         *ngFor="let sport of getElement('superPower'); let i = index"
+          [formControlName]="i" class="form-control" placeholder="Potere">
+      </div>
+
+      <label for="enemy">Nemico</label>
+      <input type="text" formControlName="enemy" id="enemy" class="form-control" placeholder="Nemico">
+      <p *ngIf="isValid('enemy')" class="alert alert-danger mt-2">Nome cattivo troppo lungo</p>
+
+      <label for="planet">Pianeta</label>
+      <input type="text" formControlName="planet" id="planet" class="form-control" placeholder="Pianeta">
+      <p *ngIf="isValid('planet')" class="alert alert-danger mt-2">Campo obbligatorio min 5 caratteri</p>
+
+      <div formArrayName="weakness" >
+
+        <button  (click)="addElement('weakness')" class="btn btn-success my-2">Aggiungi Debolezza</button>
+        <input type="text"
+         *ngFor="let sport of getElement('weakness'); let i = index"
+         [formControlName]="i" class="form-control" placeholder="Debolezza">
+
+      </div>
+
+      <button class="btn btn-primary mt-3 form-control">Crea</button>
+    </form>
+  </div>
+</div>
