@@ -1,0 +1,3 @@
+ng g m (nome file) //creazione modulo
+npm install -D json-server json-server-auth
+ng generate module dashboard --route dashboard --module app.module
